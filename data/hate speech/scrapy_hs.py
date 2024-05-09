@@ -56,7 +56,7 @@ async def main():
 			print("Error for ID: ", t_id, e)
 			tweet_op.append("")
 			file.write("<<EOT>>\n")
-			file.flush()
+		file.flush()
 	file.close()
 
 	tr_df['tweet_text'] = tweet_op
